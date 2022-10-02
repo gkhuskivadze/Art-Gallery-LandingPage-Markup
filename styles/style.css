@@ -410,7 +410,7 @@ html {
   }
 
   .desc-section__title-h1 {
-    width: 20rem;
+    width: unset;
   }
 
   .desc-section .desc-section__p {
