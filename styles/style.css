@@ -1,0 +1,690 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* ------------------- BUTTON STYLES ------------------- */
+
+.link-icon-container {
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.linkurl {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.linkurl span {
+  padding: 2.4rem 3.5rem 2.4rem 3.2rem;
+  background-color: black;
+  font-size: 2rem;
+  letter-spacing: 3.64px;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+  line-height: 23.94px;
+  transition: all 0.3s ease-in-out;
+}
+
+.left-arrow-icon {
+  height: 24px;
+  width: 8px;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.4rem;
+  background-color: rgba(213, 150, 108, 1);
+  transition: all 0.3s ease;
+}
+
+.linkurl:hover span {
+  background-color: rgba(213, 150, 108, 1);
+}
+
+.linkurl:hover .btn-icon {
+  background-color: rgba(21, 21, 21, 1);
+}
+
+/* ------------------- TEXT STYLING ------------------- */
+
+.desc-section__title-h1 {
+  font-size: 6rem;
+  line-height: 55px;
+  font-family: Big Shoulders Display;
+  color: rgba(21, 21, 21, 1);
+  font-weight: 900;
+}
+
+.titleh2 {
+  font-size: 5rem;
+  line-height: 45px;
+  font-family: Big Shoulders Display;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.desc-section__p {
+  color: rgba(68, 68, 68, 1);
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 28px;
+  font-family: Outfit;
+}
+
+.desc-section-second__title-h2 {
+  color: black;
+}
+
+.desc-section-third__title-h2 {
+  color: white;
+}
+.desc-section-third__p {
+  color: white;
+}
+
+.h3-title {
+  color: rgba(255, 255, 255, 1);
+  font-size: 2.4rem;
+  font-family: Big Shoulders Display;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.social-footer-p {
+  color: rgba(255, 255, 255, 1);
+  line-height: 26px;
+  font-size: 1.6rem;
+  font-family: Outfit;
+  font-weight: 300;
+}
+
+/* ------------------- BLOCK STYLES ------------------- */
+
+.left-arrow-icon {
+  display: block;
+}
+.right-arrow-icon {
+  display: none;
+}
+
+.padding-small {
+  /* margin-left: 1.6rem;
+  margin-right: 1.6rem; */
+  padding: 0 1.6rem;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* IMG STYLES */
+
+.banner-img {
+  width: 100%;
+}
+
+/* FOOTER */
+
+.social-footer {
+  background-color: rgba(21, 21, 21, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem;
+  padding: 4.8rem 3.2rem;
+}
+
+.icons-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.icons-container {
+  cursor: pointer;
+}
+
+/* ------ TURNING ON/OFF IMGs --------- */
+
+.desktop-title {
+  display: none;
+}
+
+.tablet-hero,
+.desktop-hero {
+  display: none;
+}
+
+.desktop-first-img,
+.tablet-first-img {
+  display: none;
+}
+
+.desktop-second-img,
+.tablet-second-img {
+  display: none;
+}
+
+.desktop-third-img,
+.tablet-third-img {
+  display: none;
+}
+
+.mobile-third-img {
+  display: block;
+}
+
+.banner1-cont {
+  max-width: 100%;
+}
+
+.banner2-cont {
+  max-width: 100%;
+  margin-bottom: 1.6rem;
+}
+.banner3-cont {
+  max-width: 100%;
+}
+
+/* SECTION BLOCKS */
+
+.desc-section {
+  margin: 3.2rem 0 12rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3.2rem;
+}
+
+.desc-section-second {
+  margin: 2.5rem 0 3.2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.1rem;
+}
+
+.desc-section-third {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 4.8rem 2.4rem;
+  margin: 1.6rem 1.6rem 12rem 1.6rem;
+  background-color: rgba(21, 21, 21, 1);
+}
+
+/* ---- TABLET SCREEN STYLES ---- */
+
+@media screen and (min-width: 767px) {
+  /* ---------- TURNING ON/OFF IMGs --------- */
+
+  .desktop-title {
+    display: none;
+  }
+
+  .mobile-hero,
+  .desktop-hero {
+    display: none;
+  }
+  .tablet-hero {
+    display: block;
+  }
+
+  .desktop-first-img,
+  .mobile-first-img {
+    display: none;
+  }
+
+  .tablet-first-img {
+    display: block;
+  }
+
+  .desktop-second-img,
+  .mobile-second-img {
+    display: none;
+  }
+
+  .tablet-second-img {
+    display: block;
+  }
+
+  .desktop-third-img,
+  .mobile-third-img {
+    display: none;
+  }
+
+  .tablet-third-img {
+    display: block;
+  }
+
+  .banner-img {
+    max-width: 100%;
+  }
+
+  .padding-small {
+    padding: 0;
+  }
+
+  .left-arrow-icon {
+    display: block;
+  }
+  .right-arrow-icon {
+    display: none;
+  }
+
+  /* -------------- FOOTER FOR TABLET ----------- */
+
+  .social-footer {
+    margin-top: 12rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+    padding: 5.6rem 4rem;
+    justify-content: space-between;
+  }
+
+  .social-footer-p {
+    max-width: 50%;
+  }
+
+  /* YOUR DAY AY THE ART GALLERY CONTAINER TABLET */
+
+  .desc-section-second__title-h2 {
+    max-width: 17.8rem;
+  }
+
+  .desc-section__p {
+    max-width: 23rem;
+  }
+
+  .container-banner1 {
+    margin-top: 12rem;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 6.8rem;
+  }
+
+  .banner1-cont {
+    flex: 0 1 auto;
+  }
+
+  .desc-section-second {
+    flex: 1 1;
+  }
+
+  /*  HERO SECTION OVERLAPPING TEXT FOR TABLET */
+
+  .container-hero {
+    min-height: 700px;
+
+    background-image: url(../assets/tablet/image-hero.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .desc-section {
+    margin-left: 389px;
+    margin-top: 145px;
+    margin-right: 49px;
+  }
+
+  .desc-section__title-h1 {
+    width: 20rem;
+  }
+
+  .desc-section .desc-section__p {
+    width: 35rem;
+  }
+
+  .hero-cont {
+    display: none;
+  }
+
+  /* 3 ITEM COMPONENT SECTION STYLES */
+
+  .container-3items {
+    margin-top: 11px;
+    display: flex;
+    gap: 11px;
+    padding: 0 4rem;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    flex: 1 1 40%;
+  }
+
+  .desc-section-third {
+    margin: 0;
+    padding: 8.5rem 2.9rem;
+    flex: 1 1 auto;
+  }
+
+  .banner3-cont {
+    margin: 0;
+    flex: 1 0;
+  }
+
+  .banner2-cont {
+    margin: 0;
+    flex: 1 0 60%;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .desktop-title {
+    display: block;
+  }
+
+  .mobile-hero,
+  .tablet-hero {
+    display: none;
+  }
+  .desktop-hero {
+    display: none;
+  }
+  .tablet-first-img,
+  .mobile-first-img {
+    display: none;
+  }
+
+  .desktop-first-img {
+    display: block;
+  }
+  .tablet-second-img,
+  .mobile-second-img {
+    display: none;
+  }
+
+  .desktop-second-img {
+    display: block;
+  }
+
+  .tablet-third-img,
+  .mobile-third-img {
+    display: none;
+  }
+
+  .desktop-third-img {
+    display: block;
+  }
+
+  /* ----------------------TEXT STYLING FOR DESKTOP ---------------- */
+
+  .desc-section__title-h1 {
+    font-size: 6rem;
+    line-height: 55px;
+    font-family: Big Shoulders Display;
+    color: rgba(21, 21, 21, 1);
+    font-weight: 900;
+  }
+
+  .titleh2 {
+    font-size: 5rem;
+    line-height: 45px;
+    font-family: Big Shoulders Display;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .desc-section__p {
+    color: rgba(68, 68, 68, 1);
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 28px;
+    font-family: Outfit;
+  }
+
+  .desc-section-second__title-h2 {
+    font-size: 6rem;
+    line-height: 60px;
+    color: black;
+  }
+
+  .desc-section-third__title-h2 {
+    color: white;
+  }
+  .desc-section__p {
+    opacity: 1;
+    font-size: 2.2rem;
+    line-height: 32px;
+  }
+
+  .desc-section-third__p {
+    color: white;
+  }
+
+  .h3-title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 3.2rem;
+    font-family: Big Shoulders Display;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  .social-footer-p {
+    color: rgba(255, 255, 255, 0.67);
+    line-height: 26px;
+    font-size: 1.6rem;
+    font-family: Outfit;
+    font-weight: 300;
+  }
+
+  /* -------------------- BLOCK STYLING -------------------- */
+  .social-footer {
+    margin-top: 18rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+    padding: 8rem 16.5rem;
+    justify-content: space-between;
+  }
+  .social-footer-p {
+    max-width: 35%;
+  }
+
+  /* 3 ITEM SECTION STYLES */
+
+  .container-3items {
+    margin-top: 3rem;
+    display: flex;
+    gap: 3rem;
+    padding: 0 16.5rem;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex: 1 1 40%;
+  }
+
+  .desc-section-third {
+    margin: 0;
+    padding: 8.5rem 2.9rem;
+    flex: 1 1 auto;
+  }
+
+  .banner3-cont {
+    margin: 0;
+    flex: 1 0;
+  }
+
+  .banner2-cont {
+    margin: 0;
+    flex: 1 0 60%;
+  }
+
+  .banner-img {
+    width: 100%;
+  }
+
+  /* YOUR DAY AY THE ART GALLERY CONTAINER */
+
+  .desc-section-second__title-h2 {
+    max-width: 29rem;
+  }
+
+  .desc-section__p {
+    max-width: 38rem;
+  }
+
+  .container-banner1 {
+    margin-top: 12rem;
+    padding: 0 16.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 12.5rem;
+  }
+
+  .desc-section-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-cont {
+    display: none;
+  }
+  .desc-section__title-h1 {
+    display: none;
+  }
+
+  .desktop-hero {
+    width: unset;
+  }
+  .desc-section {
+    display: inline-block;
+    margin: unset;
+    transform: translate(-6.799999999999997rem, 246px);
+  }
+
+  .container-hero {
+    min-height: unset;
+    display: flex;
+    background-image: unset;
+    height: 800px;
+    /* width: 100vw; */
+  }
+
+  .background {
+    height: 100%;
+    width: 100%;
+  }
+
+  .desktop-title {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 9.6rem;
+    line-height: 88px;
+    font-family: Big Shoulders Display;
+    font-weight: 900;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, white 50%, black 50%);
+    padding: 24rem 24%;
+  }
+
+  .desktop-title-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-image: url(../assets/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 50% 100%;
+  }
+}
